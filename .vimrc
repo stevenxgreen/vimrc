@@ -3,7 +3,7 @@ let mapleader = ","
 let maplocalleader = "\\"
 set nu rnu
 set statusline=%f%=%l/%L
-set tabstop=4
+set tabstop=2
 nnoremap H 0
 nnoremap L $a
 nnoremap - ddp
@@ -31,7 +31,7 @@ nnoremap <up> <nop>
 nnoremap <down> <nop>
 nnoremap <left> <nop>
 nnoremap <right> <nop>
-
+autocmd FileType javascript vnoremap <buffer> <localleader>c I//<esc>
 autocmd FileType javascript nnoremap <buffer> <localleader>c I//<esc>
 autocmd FileType python nnoremap <buffer> <localleader>c I#<esc>
 
